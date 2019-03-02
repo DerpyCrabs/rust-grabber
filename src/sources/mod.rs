@@ -1,8 +1,10 @@
 mod konachan;
+mod konachan_com;
 mod rule34;
 mod safebooru;
 mod yandere;
 pub use self::konachan::Konachan;
+pub use self::konachan_com::KonachanCom;
 pub use self::rule34::Rule34;
 pub use self::safebooru::Safebooru;
 pub use self::yandere::Yandere;

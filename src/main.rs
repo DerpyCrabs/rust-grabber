@@ -62,6 +62,7 @@ fn main() {
     let source: Box<Source> = match matches.value_of("source") {
         Some("safebooru") => Box::new(sources::Safebooru {}),
         Some("konachan") => Box::new(sources::Konachan {}),
+        Some("konachan-com") => Box::new(sources::KonachanCom {}),
         Some("rule34") => Box::new(sources::Rule34 {}),
         Some("yandere") => Box::new(sources::Yandere {}),
         _ => {
